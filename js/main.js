@@ -4,7 +4,8 @@ jQuery(document).ready(function($) {
       puppy =$ (".puppy"),
       scrollLine =$ (".scroll-line"),
       scrollDown =$ (".Scrolldown"),
-      titleMain =$ (".title-main")
+      titleMain =$ (".title-main"),
+      navBar =$ (".nav-bar")
 
 // Animate inspect
 
@@ -14,7 +15,7 @@ jQuery(document).ready(function($) {
   .from(scrollLine, 0.5,{scaleY:0, transformOrigin:"center top", ease:Power1.easeOut}, '-=2')
   .from(bgImage, 2,{autoAlpha:0, scale: 1.5,ease:Power1.easeOut}, '-=2')
   .from(puppy, 2, {autoAlpha: 0, scale: 1.5, ease:Power1.easeOut}, '-=1.5')
-
+  .from(navBar, 0.5,{scaleY:0, transformOrigin:"center top", ease:Power1.easeOut}, '-=2')
   //Scroll starts
 
   var controller = new ScrollMagic.Controller();
