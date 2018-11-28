@@ -39,16 +39,16 @@ html {
   margin: 12px;
   padding: 5px;
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   font-weight: 350;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
+} */
 
 .full-height {
   height: 100vh;
@@ -69,7 +69,7 @@ ul {
 .top-titles {
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   text-align: center;
 }
 
@@ -215,7 +215,7 @@ img.brain {
   color: #3f3f3f;
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   font-weight: 400;
 }
 
@@ -281,10 +281,68 @@ img.socials {
   padding: 3px;
 }
 .work-container {
-  width: 70%;
+  width: 65%;
   margin: 5rem auto;
 }
 
+.work-title {
+  font-size: 52px;
+  letter-spacing: 0.06em;
+}
+
+.sub-title{
+  color: #3f3f3f;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+  margin-top: -1em;
+}
+
+.content-title{
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+
+}
+
+.mini-title{
+  font-size: 20px;
+  font-weight: 250;
+  letter-spacing: 0.06em;
+  margin-top: 1em;
+}
+
+.work-content{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -.003em;
+  line-height: 1.58;
+  margin-top: 1em;
+}
+.work-list {
+  color: #3f3f3f;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -.003em;
+  line-height: 1.58;
+}
+
+.work-bullet {
+  color: #3f3f3f;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -.003em;
+  line-height: 1.58;
+}
+
+.work-image {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  align-items: center;
+}
 @media only screen and (min-width:780px) {
   .puppy {
     width: 50;
