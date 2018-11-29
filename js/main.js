@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
   var section2 = new ScrollMagic.Scene({
       triggerElement: '.section2',
       triggerHook: 0,
-      duration: '80%'
+      duration: '40%'
     })
     .setTween(tlMainScrollOut)
     .setPin('.section2')
