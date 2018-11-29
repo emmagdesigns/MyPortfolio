@@ -11,29 +11,29 @@ jQuery(document).ready(function($) {
 
   var tlLoader = new TimelineMax();
   tlLoader
-    .from(titleMain, 2, {
+    .from(titleMain, 1, {
       autoAlpha: 0
     })
     .from(scrollLine, 0.5, {
       scaleY: 0,
       transformOrigin: "center top",
       ease: Power1.easeOut
-    }, '-=2')
-    .from(bgImage, 2, {
-      autoAlpha: 0,
-      scale: 1.5,
-      ease: Power1.easeOut
-    }, '-=2')
-    .from(puppy, 2, {
+    }, '-=1')
+    .from(bgImage, 1.4, {
       autoAlpha: 0,
       scale: 1.5,
       ease: Power1.easeOut
     }, '-=1.5')
+    .from(puppy, 1, {
+      autoAlpha: 0,
+      scale: 1.5,
+      ease: Power1.easeOut
+    }, '-=1')
     .from(navBar, 0.5, {
       scaleY: 0,
       transformOrigin: "center top",
       ease: Power1.easeOut
-    }, '-=2')
+    }, '-=3')
 
   //Scroll starts
 
@@ -42,9 +42,9 @@ jQuery(document).ready(function($) {
   var tlMainScroll = new TimelineMax()
     .add([
       TweenMax.to(puppy, 4, {
-        scale: 2,
-        y: 150,
-        x: "-45%",
+        scale: 3,
+        y: 130,
+        x: "-150%",
         ease: Power1.easeInOut
       }),
       TweenMax.to(titleMain, 1, {
@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
   var tweenHome = new ScrollMagic.Scene({
       triggerElement: '.pin-scene',
       triggerHook: 0,
-      duration: '130%'
+      duration: '50%'
     })
 
     .setTween(tlMainScroll)
@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
       TweenMax.to(bgImage, 8, {
         autoAlpha: 0
       }),
-      TweenMax.from('.section2', 4, {
+      TweenMax.from('.section2', 8, {
         autoAlpha: 0
       }),
       TweenMax.to(puppy, 8, {
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
   var section2 = new ScrollMagic.Scene({
       triggerElement: '.section2',
       triggerHook: 0,
-      duration: '40%'
+      duration: '80%'
     })
     .setTween(tlMainScrollOut)
     .setPin('.section2')
